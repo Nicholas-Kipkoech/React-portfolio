@@ -15,13 +15,14 @@ const AboutMe = (props) => {
 
   const SCREEN_CONSTANTS = {
     description:
-      "As a skilled Data Analyst with experience in statistical analysis, data visualization, and machine learning techniques, I am eager to leverage my expertise to make a significant impact in the field of data science. I possess a detail-oriented and analytical approach, which enables me to identify trends, patterns, and insights that inform strategic decision-making. My proficiency in data cleaning, transformation, and visualization using tools such as Python, SQL, Excel, and Power BI makes me a valuable asset to any organization.I have experience collaborating with interdisciplinary teams to achieve project goals, and my excellent communication skills allow me to convey complex data- driven insights to diverse audiences. I am dedicated to staying up-to - date with the latest industry trends and continuously expanding my skills and knowledge in the data science field.I am excited to bring my passion and expertise to a dynamic and innovative organization where I can contribute to the success of the team and help drive business growth.",
+      "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
     highlights: {
       bullets: [
-        "DATA VISUALISATION  Great experience in discovering the best ways to present data using a variety of visual techniques",
-        "DATA ANALYTICS  Well practiced in analyzing massive amounts of informations to pinpoint trends and patterns",
-        "MACHINE LEARNING  Skilled in implementing machine learning algorithms to build predictive models",
-        "DATABASES  Knowledge of database development and experience writing queries"
+        "Full Stack web and mobile development",
+        "Interactive Front End as per the design",
+        "Redux for State Mnanagement",
+        "DATABASES  Knowledge of database development and experience writing queries",
+        "Building REST API",
       ],
       heading: "Here are a Few Highlights:",
     },

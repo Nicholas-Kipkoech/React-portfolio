@@ -1,11 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import {
-
-  faLinkedin,
-
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
@@ -20,7 +15,6 @@ const Footer = () => {
       icon: faTwitter,
       link: "https://twitter.com/MutaiE1?t=ma8Q0Z81fkTMZpnbXEZEfw&s=09",
     },
-
   ];
 
   /* GET CURRENT YEAR */
@@ -44,9 +38,8 @@ const Footer = () => {
     <div className="main-footer-container">
       <div className="main-footer-content">
         <div className="main-footer-message">
-          <span> All rights reserved © Emmanuel Koech {currentYear} </span>
-          <span>Email:manureservations@gmail.com</span> {" "}
-          <p>Phone:+254727639047</p>
+          <span> All rights reserved © Nicholas Kipkoech {currentYear} </span>
+          <span>Email:nickey968@gmail.com</span> <p>Phone:+254713839182</p>
         </div>
         <div className="main-footer-socials">{getSocials()}</div>
       </div>

@@ -30,6 +30,7 @@
 .experience-description {
   margin: 10px 0 0 0;
   text-align: justify;
+  overflow: scroll;
 }
 
 .resume-description-text {

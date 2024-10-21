@@ -10,13 +10,10 @@ const Profile = () => {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="https://www.linkedin.com/in/emmanuel-koech-a223a2171">
+              <a href="https://www.linkedin.com/in/nicholas-kipkoech-7a3850282">
                 <i className="fa fa-linkedin-square" />
               </a>
-              <a href="https://link.medium.com/HfBBdSp8dzb">
-                <i className="fa fa-medium" />
-              </a>
-              <a href="https://twitter.com/MutaiE1?t=ma8Q0Z81fkTMZpnbXEZEfw&s=09">
+              <a href="https://x.com/NickeyKipkoech">
                 <i className="fa fa-twitter" />
               </a>
             </div>
@@ -24,7 +21,7 @@ const Profile = () => {
           <div className="profile-details-name">
             <span className="primary-text">
               {" "}
-              Hello, I'M <span className="highlighted-text">Emmanuel</span>
+              Hello, I'M <span className="highlighted-text">Nicholas</span>
             </span>
           </div>
           <div className="profile-details-role">
@@ -35,18 +32,16 @@ const Profile = () => {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    " Specialized in Data Visualization😎",
+                    " Specialized in Backend Development😎",
                     1000,
-                    "Specialized in Data Analytics!💻",
-                    1000,
-                    "Specialized in Machine Learning!",
+                    "Specialized in Frontend development💻",
                     1000,
                   ]}
                 />
               </h1>
             </span>
             <span className="profile-role-tagline">
-              Data Scientist & Analyst located in Nairobi Kenya
+              Software Engineer located in Nairobi Kenya
             </span>
           </div>
           <div className="profile-options">
@@ -57,6 +52,11 @@ const Profile = () => {
               {" "}
               Hire Me{" "}
             </button>
+
+            <a className="btn primary-btn" href="/Resume.pdf" download>
+              {" "}
+              Get Resume
+            </a>
           </div>
         </div>
         <div className="profile-picture">

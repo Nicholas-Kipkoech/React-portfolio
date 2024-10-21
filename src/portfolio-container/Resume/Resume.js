@@ -52,37 +52,49 @@ const Resume = (props) => {
   ];
 
   const programmingSkillsDetails = [
-    { skill: "Python", icon: "https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" },
-    { skill: "Tableau", icon: "https://cdn.filepicker.io/api/file/jZDILlufSOSDOkuJTZ7J" },
-    { skill: "SQL", icon: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png" },
-    { skill: "Microsoft Azure", icon: "https://arunpotti.files.wordpress.com/2021/12/microsoft_azure.svg_.png" },
-    { skill: "R programming", icon: "https://cdn-icons-png.flaticon.com/512/2103/2103694.png" },
-    { skill: "Microsoft power BI", icon: "https://1000logos.net/wp-content/uploads/2022/08/Microsoft-Power-BI-Logo.png" },
-    { skill: "Excel", icon: "https://w7.pngwing.com/pngs/117/809/png-transparent-microsoft-excel-training-computer-software-microsoft-office-excel-template-angle-text-thumbnail.png" },
+    {
+      skill: "NodeJs",
+    },
+    {
+      skill: "SQL",
+      icon: "https://cdn-icons-png.flaticon.com/512/4299/4299956.png",
+    },
+    {
+      skill: "Microsoft Azure",
+      icon: "https://arunpotti.files.wordpress.com/2021/12/microsoft_azure.svg_.png",
+    },
+    {
+      skill: "React JS",
+      icon: "https://cdn-icons-png.flaticon.com/512/2103/2103694.png",
+    },
+    {
+      skill: "AWS",
+      icon: "https://1000logos.net/wp-content/uploads/2022/08/Microsoft-Power-BI-Logo.png",
+    },
   ];
 
   const projectsDetails = [
     {
-      title: "Data-Science-Jobs-EDA",
+      title: "React Movie App",
       duration: { fromDate: "2023", toDate: "2023" },
       description:
-        "The project seeks to establish various insights about data science jobs across the globe in select countries.",
-      subHeading: "Technologies used: Jupyter Notebook",
+        "A movie app designed using ReactJs by consuming IMDB movie API",
+      subHeading: "Technologies used: React Js",
     },
 
     {
-      title: "SENTIMENT ANALYSIS ON TWEETS",
+      title: "Personal Portfolio Website",
       duration: { fromDate: "2023", toDate: "2023" },
       description:
-        "Utilized R Studio to perform sentiment analysis on 14,000 tweeter reviews of six major airlines Performed data cleaning and text analysis to successfully identified the major complaints for each airline Applied regression and machine learning to produce a final model with an accuracy of 88 % and lift of 34 % ",
-      subHeading: "Technologies used: Jupyter Notebook"
+        "A Personal Portfolio website to showcase all my details and projects at one place.",
+      subHeading: "Technologies used: React Js, Bootstrap",
     },
     {
-      title: "CUSTOMER SALES ANALYSIS",
+      title: "PayStack Payment Gateway",
       duration: { fromDate: "2023", toDate: "2023" },
       description:
-        "Utilized SQL to extract data from 8 different related tables from customer sales databases",
-      subHeading: "Technologies used: Jupyter Notebook"
+        "Rewriting the paystack gateway to allow users easily intergrate paystack with their products.",
+      subHeading: "Technologies used: NodeJs,Express",
     },
   ];
 
@@ -90,9 +102,11 @@ const Resume = (props) => {
     /* EDUCATION */
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"Jomo Kenyatta University"}
-        subHeading={"BACHELOR OF SCIENCE IN FINANCIAL ENGINEERING"}
-        description={"Majors: Probability & Statistics, Time Series Analysis, Calculus, Stochastic Processes, R programming, Linear Algebra"}
+        heading={"Zetech University, Kenya"}
+        subHeading={"Diploma in Software Engineering"}
+        description={
+          "Majors: Probability & Statistics, Calculus, System Design, Coding"
+        }
         fromDate={"2018"}
         toDate={"present"}
       />
@@ -101,36 +115,25 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={" KPMG VIRTUAL INTERNSHIP PROGRAM"}
-          subHeading={"Junior Data Consultant"}
-          fromDate={"April 2023"}
+          heading={"ZinZen"}
+          subHeading={"React Open Source Developer"}
+          fromDate={"July 2024"}
           toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Data Quality Assessment: Assessment of data quality and completeness in preparation for analysis.<br />
-            Data Insights: Targeting high value customers based on customer demographics and attributes.
+            Built the frontend of the life planner app in React. Enables users
+            to enter goals with fuzzy time constraints like “read 1hr daily
+            after 7 and before 10” and calculates a schedule with specific start
+            and end times based on the provided constraints. Reduced frequency
+            of bugs by including React integration tests in CI. Improved
+            functionality of frontend by fixing bugs and adding a helper module
+            (TypeScript) that filters tasks received from the back end by start
+            date.
           </span>
-        </div>
-        <ResumeHeading
-          heading={" AZUBI AFRICA"}
-          subHeading={"Data Analytics Intern"}
-          fromDate={"Dec 2022"}
-          toDate={"March 2023"}
-        />
-
-        <div className="experience-description">
-          <span className="resume-description-text">
-            Collected, analyzed and interpreted data to identify trends and insights<br />
-            Created interactive dashboards and reports using Power BI to communicate data insights to stakeholders<br />
-            Developed data models and performed advanced data analysis using Python and MySQL<br />
-            Conducted research and prepared data visualizations to support business development initiatives
-            Supported ongoing projects by providing data analytics support
-          </span>
-
         </div>
       </div>
-    </div >,
+    </div>,
     /* PROGRAMMING SKILLS */
     <div
       className="resume-screen-container programming-skills-container"
@@ -140,9 +143,6 @@ const Resume = (props) => {
         <div className="skill-parent" key={index}>
           <div className="heading-bullet"></div>
           <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <img src={skill.icon} height='50' />
-          </div>
         </div>
       ))}
     </div>,
@@ -162,12 +162,16 @@ const Resume = (props) => {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Playing the Guitar"
-        description="During mental breaks, I enjoy strumming familiar chords on the guitar as I work on perfecting the skill."
+        heading="Mentoring"
+        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
       />
       <ResumeHeading
-        heading="Gardening"
-        description="Having practiced as a farmer previously, I enjoy gardening. The  joy that comes with watching crops grow after some care is mind relieving!"
+        heading="Listening to Music"
+        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+      />
+      <ResumeHeading
+        heading="Competitive Gaming"
+        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
       />
       <ResumeHeading
         heading="Sight seeing"
